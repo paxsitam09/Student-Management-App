@@ -67,9 +67,6 @@
                 />
                 <label for="remember" class="ml-2 text-gray-600">Remember me</label>
               </div>
-              <a href="#" class="text-indigo-600 hover:text-indigo-500 font-medium">
-                Forgot password?
-              </a>
             </div>
 
             <!-- Login Button -->
@@ -134,11 +131,11 @@ export default {
           password: password.value
         })
         sessionStorage.setItem('access_token', response.data.access_token);
-        authStore.login(response.data.access_token)
-        useNotificationStore().success('Login Successful')
-        router.push('/dashboard')
+        authStore.login(response.data.access_token);
+        useNotificationStore().success('Login Successful');
+        router.push('/dashboard');
       } catch (error) {
-        console.error(error)
+          useNotificationStore().error('Incorrect Username Or Password. Please try again.');
       } finally {
         isLoading.value = false
       }
