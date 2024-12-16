@@ -39,7 +39,7 @@ This is a Laravel 10 application integrated with Vue 3 and Vite, designed to sho
 - Laravel 10
 - PHP 8.1
 - MySQL
-- Role and Permission Library (e.g., Spatie Permission)
+- Role and Permission Library (Spatie Permission)
 
 ### **Frontend**
 - Vue 3
@@ -60,7 +60,7 @@ This is a Laravel 10 application integrated with Vue 3 and Vite, designed to sho
 1. Clone the repository:
    ```bash
    git clone https://github.com/paxsitam09/Student-Management-App.git
-   cd Student-Management-App
+   cd student-manage-backend
    ```
 2. Install dependencies:
    ```bash
@@ -80,7 +80,7 @@ This is a Laravel 10 application integrated with Vue 3 and Vite, designed to sho
 ### **Frontend Setup**
 1. Navigate to the frontend directory:
    ```bash
-   cd frontend
+   cd student-manage-frontend
    ```
 2. Install dependencies:
    ```bash
